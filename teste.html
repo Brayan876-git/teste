@@ -12,28 +12,65 @@
     <title>Testes</title>
 </head>
 <body>
-    <header class="navbar">
-  <div class="spacer"></div> <!-- Espaçador para equilibrar o alinhamento no centro -->
-  
-  <nav class="nav-links">
-    <a href="#" class="active">INÍCIO</a>
+    <header class="topbar">
+  <nav class="topbar__links">
+    <a class="active" href="#">INÍCIO</a>
     <a href="#">ORDENS</a>
     <a href="#">CONVERSAS</a>
   </nav>
-
-  <div class="user-profile">
-    <!-- Ícone de utilizador SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-    </svg>
-  </div>
+  <button class="topbar__avatar" aria-label="Perfil">
+    <!-- seu ícone de perfil -->
+  </button>
 </header>
 
- <div class="container">
-        <div class="box"><h1>Complete o seu cadastro</h1><h2>Nome</h2>
-        <p>sla</p></div>
-        <div class="box2"></div>
- </div>
+<main class="page">
+  <form class="card">
+    <h1>Complete seu cadastro</h1>
 
-</body>
-</html>
+    <div class="row">
+      <label>Nome <span class="req">*</span>
+        <input placeholder="Nome">
+      </label>
+      <label>Sobrenome <span class="req">*</span>
+        <input placeholder="Sobrenome">
+      </label>
+    </div>
+
+    <label>CPF <span class="req">*</span>
+      <input placeholder="000.000.000-00">
+    </label>
+
+    <label>Data aniversário <span class="req">*</span>
+      <input placeholder="dd/mm/aaaa">
+    </label>
+
+    <label>Telefone ou celular <span class="req">*</span>
+      <input placeholder="(DDD) Telefone">
+    </label>
+
+    <label>E-mail
+      <input placeholder="Email">
+    </label>
+
+    <h2>Dados para envio</h2>
+
+    <div class="row">
+      <label>CEP <input placeholder="00000-000"></label>
+      <label>Cidade <input placeholder="Cidade"></label>
+    </div>
+
+    <div class="row">
+      <label>Estado
+        <select><option>None</option>
+          <option>SP</option>
+          <option>BH</option>
+        </select>
+      </label>
+      <label>Endereço
+        <input placeholder="Rua, Bairro., Número">
+      </label>
+    </div>
+  </form>
+
+  <button class="btn-submit" type="submit">Cadastrar-se</button>
+</main>
