@@ -1,58 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <title>Home Profissionais</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixly – Início do profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="topbar">
-        <nav class="topbar__links">
-            <a class="active" href="#">Inicio</a>
-            <a href="#">Ordens</a>
-            <a href="#">Conversas</a>
-        </nav>
-        <button class="topbar__avatar" aria-label="Perfil">
+  <div class="container">
 
-        </button>
-    </header>
+    <nav class="navbar">
+      <div class="logo">
+        <svg width="18" height="24" viewBox="0 0 18 24" aria-hidden="true"><path d="M11 0 1 14h6l-3 10L17 8h-6z" fill="#f4c542"/></svg>fixly
+      </div>
+      <div class="tabs">
+        <a class="ativo" href="#inicio">INÍCIO</a>
+        <a href="#ordens">ORDENS</a>
+        <a href="#conversas">CONVERSAS</a>
+      </div>
+      <div class="avatar" aria-label="Perfil">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#222"><circle cx="12" cy="8" r="4.5"/><path d="M3 22c0-5 4-8 9-8s9 3 9 8z"/></svg>
+      </div>
+    </nav>
 
-    <main class="page">
-        <form class="card">
-            <div class="perfil">
-    <img src="./img/round-glossy-adhesive-paper-label-isolated-on-transparent-background-free-png.webp">
+    <section class="perfil">
+      <div class="foto"></div>
+      <div>
+        <h1>Profissional</h1>
+        <p>Descrição do perfil</p>
+      </div>
+    </section>
+    <hr>
 
-    <div class="informacoes">
-        <h2>Profissional</h2>
-        <desc>Descrição do Perfil</desc>
+    <h2>Solicitação:</h2>
+    <section class="solicitacao">
+      <h3>Pedido</h3>
+      <p>Descrição do pedido</p>
+      <div class="acoes">
+        <button class="btn-rejeitar">Rejeitar</button>
+        <button class="btn-aceitar">Aceitar</button>
+      </div>
+    </section>
+
+    <div class="os-titulo">
+      <h2>Ordens de serviço</h2>
+      <span>4 ordens</span>
     </div>
-</div>
-        </form>
 
-    </main>
+    <section class="grade">
+      <button class="os">
+        <div class="os-topo"><div class="os-icone"></div><div><b>OS# 145263</b><small>Número da OS</small></div></div>
+        <div class="tecnico"><div class="foto-tec"></div><div><b>José Arnaldo</b><small>Técnico</small></div></div>
+        <div class="status">Aberta</div>
+        <div class="valor">R$ 270,00<span>›</span></div>
+      </button>
 
-    <div class="solicitacoes">
-        <h2>Solicitações:</h2>
-    </div>
+      <button class="os andamento">
+        <div class="os-topo"><div class="os-icone"></div><div><b>OS# 145263</b><small>Número da OS</small></div></div>
+        <div class="tecnico"><div class="foto-tec"></div><div><b>José Arnaldo</b><small>Técnico</small></div></div>
+        <div class="status">Andamento</div>
+        <div class="valor">R$ 270,00<span>›</span></div>
+      </button>
 
-    <div class="container1">
+      <button class="os fechada">
+        <div class="os-topo"><div class="os-icone"></div><div><b>OS# 145263</b><small>Número da OS</small></div></div>
+        <div class="tecnico"><div class="foto-tec"></div><div><b>José Arnaldo</b><small>Técnico</small></div></div>
+        <div class="status">Fechada</div>
+        <div class="valor">R$ 270,00<span>›</span></div>
+      </button>
 
-    <div class="box1">
-        <h2>Pedido</h2>
-        <p>Descrição do Pedido</p>
-        <div class="box2">
-            <h2>Aceitar</h2>
-        </div>
-    </div>
+      <button class="os finalizada">
+        <div class="os-topo"><div class="os-icone"></div><div><b>OS# 145263</b><small>Número da OS</small></div></div>
+        <div class="tecnico"><div class="foto-tec"></div><div><b>José Arnaldo</b><small>Técnico</small></div></div>
+        <div class="status">Finalizada</div>
+        <div class="valor">R$ 270,00<span>›</span></div>
+      </button>
+    </section>
 
-    </div>
-
-
+  </div>
 </body>
 </html>
